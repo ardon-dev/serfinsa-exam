@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
@@ -21,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.ardondev.serfinsa.MainViewModel
@@ -63,6 +65,9 @@ fun JoinCommerceScreen(
             ) {
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Nombre") },
                     value = viewModel.name.value,
@@ -73,6 +78,9 @@ fun JoinCommerceScreen(
                 )
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Departamento") },
                     value = viewModel.department.value,
@@ -83,6 +91,9 @@ fun JoinCommerceScreen(
                 )
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Municipio") },
                     value = viewModel.municipality.value,
@@ -93,6 +104,9 @@ fun JoinCommerceScreen(
                 )
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Number
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Documento") },
                     value = viewModel.document.value,
@@ -103,6 +117,9 @@ fun JoinCommerceScreen(
                 )
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Phone
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Telefono") },
                     value = viewModel.phone.value,
@@ -113,6 +130,9 @@ fun JoinCommerceScreen(
                 )
                 Spacer(Modifier.size(16.dp))
                 TextField(
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Email
+                    ),
                     modifier = Modifier.fillMaxWidth(),
                     label = { Text("Correo electrónico") },
                     value = viewModel.email.value,
