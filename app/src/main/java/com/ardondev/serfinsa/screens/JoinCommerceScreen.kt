@@ -108,7 +108,7 @@ fun JoinCommerceScreen(
                         keyboardType = KeyboardType.Number
                     ),
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("Documento") },
+                    label = { Text("IVA/NIT o DUI") },
                     value = viewModel.document.value,
                     onValueChange = { newValue ->
                         viewModel.validateCommerce()
